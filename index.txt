@@ -55,4 +55,15 @@ pois essas novas funcionalidades podem quebrar as outras, para isto é realizado
   + Ferramentas:
   
 
-  
+* Pirâmide de testes (Proporção ideal):
+          /\
+          Functional tests: No topo mas não menos importante, vem os testes funcionais (aonde se da pela funcionaliade em sí esperada "cenário ideal")
+        /    \
+          Integration tests: No meio vem os testes que unem varias funcionalidades, então porisso fica no meio.
+      /         \
+     ______Unit tests: Na base está os testes unitários, aonde devem ser com maior quantidade.
+     
+       
+
+
+
