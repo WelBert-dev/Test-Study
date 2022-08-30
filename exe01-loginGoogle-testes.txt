@@ -1,0 +1,38 @@
+* Critérios de "Aceite" definidos pelo PO:
+  - 1 Deve se logar com uma conta G-mail.
+  - 2 Deve funcionar nos navegadores oficiais google e não oficiais (ex: Firefox).
+  - 3 Caso o usuário não possua uma conta google, ele deve clicar em "Criar conta" e ser redirecionado para tela de cadastro.
+  - 4 Caso tenha algum erro no seu e-mail, ou senha um alerta deve ser exibido.
+  - 5 Caso tenha esquecido a senha, o usuário deve clicar em "Esqueci minha senha" e ser redirecionado para tela de troca de senha.
+  
+
+* TC0001 (Ideal):
+  - Cenário: Logar com sucesso.
+  - Step01: Digítar um e-mail válido.
+  - Step02: Digítar uma senha válida.
+  - Step03: Clicar em logar.
+  - Result Esperado: Logar com sucesso.
+  
+* TC0002 (Não ideal):
+  - Cenário: Tentar logar com e-mail ou senha inválido.
+  - Step01: Digítar um e-mail inválido.
+  - Step02: Digítar uma senha inválida.
+  - Step03: Clicar em logar.
+  - Result Esperado: Alerta de Erro é acionado (porém não indica qual dos campos está correto, por segurança).
+  
+* TC0003 (Não ideal):
+  - Cenário: Tentar logar sem digitar e-mail ou senha.
+  - Step01: Deixa algum dos campos em branco.
+  - Result Esperado: Alerta de Erro é acionado informando campo obrigatório.
+  
+* TC0004:
+  - Cenário: Tentar logar sem conexão com internet.
+  - Step01: Cortar a conexão com internet e clicar em logar.
+  - Result Esperado: Alerta de Erro é acionado informando que falta conexão com rede.
+  
+* TC0005:
+  - Cenário: Errar a senha mais que 5x.
+  - Step01: Entrar com valores inválidos e tentar logar 5X.
+  - Result Esperado: Conta bloqueia por 10 minutos e mensagem alerta é acionada.
+  
+  
