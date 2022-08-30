@@ -1,0 +1,58 @@
+- Objetivo: Introdução e estudos sobre Analise de Testes.
+- Data de criação: 30/08/2022
+- Fonte: https://www.youtube.com/watch?v=7FqlsKBY3OY
+
+
+* Tipos de teste Funcional:
+  - "Caixa preta": Avalia sabendo o código da funcionalidade X.
+  - "Caixa branca": Avalia sem saber, testa a funcionalidade na "visão do usuário".
+
+* Teste Funcional (Caixa preta): Avalia uma funcionalidade seguindo o fluxo "natural", inserindo valores ja esperados pela funcionalidade.
+  - Aplicado pelos QA.
+  - ex: Login e senha correto.
+  + Ferramentas:
+    - Katalon Studio
+    - Selenium Web Driver (Mais utilizado)
+    - Appium
+    - Protractor
+    - Cypress (em alta)
+    - TestComplete
+    - Test Café
+
+* Teste Não Funcional: Avalia outros parâmetros sem ser a funcionalidade em sí.
+  - Exemplo: Teste de performance, segurança...
+  - Por não testar uma funcionalidade em sí este teste não é nem do tipo caixa branca e nem preta.
+
+* Teste Unitário (Caixa branca): Avalia pequenos blocos de comandos, com ajuda de frameworks. (a menor unidade de teste dentre os testes).
+  - Aplicado pelos dev.
+  + Ferramentas:
+  
+* Teste Componente/Instrumentado/UI: Avalia pequenos blocos de comandos no lado do frontend. também com auxilio de frameworks (menor unidade de teste no lado do cliente).
+  - Aplicado pelos QA.
+  + Ferramentas:
+
+* Teste Integrado (Caixa branca e preta): Avalia a junção de uma ou mais funcionalidades em conjunto (Verificando se juntas elas realizam oque foi desejado).
+  - Exemplo: Frontend e Backend (um fetch em uma API até a montagem do componente em tela). (Teste funcional também pode ser considerado um teste Integrado)
+  - Aplicado pelos dois (QA ou Dev).
+  + Ferramentas:
+ 
+* Teste Regressivo (Caxia branca e preta): Faz a re-testagem das funcionalidades ja testadas anteriormente (Necessário ao adicionar novas funcionalidades,
+pois essas novas funcionalidades podem quebrar as outras, para isto é realizado novos testes).
+  - Aplicado mais pelos QA porém também existem cenários em que os Dev também aplica.
+  + Ferramentas:
+
+* Teste de Carga/Stress/Performance (Teste não funcional): Não é nem de caixa branca, nem de caixa preta, Avalia tempos de repostas, quantos usuários simuntâneos e etc...
+  - obs: Bastante utilizado por ecommerces em época de blackfriday (devido ao número de requisições ser bem maior nesta época).
+  - Exemplo: BruteForce.
+  - Aplicado pelos dois (QA ou Dev).
+  + Ferramentas:
+    - Gatling Stress Tool.
+    - BlazeMeter.
+    - Apache jMeter (Gratuito, mais utilizado).
+  
+* Teste de Usabilidade: Aplicações avaliando opiniões de usuários (Afim de melhoras navegação e facilitar no uso do software em sí).
+  - Aplicado pelos UX e PO.
+  + Ferramentas:
+  
+
+  
