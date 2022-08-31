@@ -35,4 +35,10 @@
   - Step01: Entrar com valores inválidos e tentar logar 5X.
   - Result Esperado: Conta bloqueia por 10 minutos e mensagem alerta é acionada.
   
-  
+* TC0006:
+  - Cenário: Tentar esquecer a senha e enviar para um e-mail inexistente no sistema.
+  - Step01: Errar a senha e clicar em esquecer
+  - Step02: Entrar com um e-mail inexistente (sem login)
+  - Step03: Clicar em enviar.
+  - Result Esperado: Alerta de Erro é acionado (A depender da politica de segurança do Sistema, informa que e-mail é inexistente).
+
